@@ -117,10 +117,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        SoftBoiledBtn.isHighlighted = true
-        InAPouchBtn.isHighlighted = true
-        selectedType [2] = true
+        selectedType[2] = true
+        setHightlighingForButtons()
+
         TimerLabel.text = NSString(format: "%0.2d:%0.2d", HardBoiledConst/60, HardBoiledConst%60) as String
         
     }
