@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Egg_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="74V-DC-vsU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoc-8n-sOi">
+                                <rect key="frame" x="46.5" y="78" width="84" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="Gnj-lA-mxS"/>
+                                    <constraint firstAttribute="height" constant="84" id="L6N-E5-0fS"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="EggForApp"/>
+                                <connections>
+                                    <action selector="SoftBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vXf-hk-mNb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnR-QJ-EPc">
+                                <rect key="frame" x="145.5" y="78" width="84" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="BHk-bw-LSO"/>
+                                    <constraint firstAttribute="width" constant="84" id="sju-e2-mro"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="EggForApp"/>
+                                <connections>
+                                    <action selector="PounchBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4hE-NI-cDu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0y-wz-Nve">
+                                <rect key="frame" x="244.5" y="78" width="84" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="WO6-3F-wO1"/>
+                                    <constraint firstAttribute="height" constant="84" id="ocz-Kw-K1R"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="EggForApp"/>
+                                <connections>
+                                    <action selector="HardBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTc-lk-zjV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soft-boiled " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NE4-uu-Ufw">
+                                <rect key="frame" x="46.5" y="170" width="84" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In a pouch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A32-Jb-TEs">
+                                <rect key="frame" x="145.5" y="170" width="84" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hard boiled" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTd-cQ-7Gt">
+                                <rect key="frame" x="244.5" y="170" width="84" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mx-nL-zj9">
+                                <rect key="frame" x="138" y="308" width="99" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="JyQ-V7-BfM"/>
+                                    <constraint firstAttribute="height" constant="51" id="LGh-7a-lmi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="131-c8-Tse">
+                                <rect key="frame" x="161" y="496" width="53" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="7an-28-k0m"/>
+                                    <constraint firstAttribute="height" constant="53" id="BSd-9T-a2G"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="PlayBtn"/>
+                                <connections>
+                                    <action selector="StartBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xde-KG-jch"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Cp-Li-04e"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Eoc-8n-sOi" firstAttribute="top" secondItem="3Cp-Li-04e" secondAttribute="top" constant="78" id="46W-NK-cqb"/>
+                            <constraint firstItem="bTd-cQ-7Gt" firstAttribute="leading" secondItem="f0y-wz-Nve" secondAttribute="leading" id="BKd-zN-U5y"/>
+                            <constraint firstItem="bTd-cQ-7Gt" firstAttribute="top" secondItem="f0y-wz-Nve" secondAttribute="bottom" constant="8" symbolic="YES" id="Bq8-8h-Wsp"/>
+                            <constraint firstItem="131-c8-Tse" firstAttribute="centerX" secondItem="3Cp-Li-04e" secondAttribute="centerX" id="D8U-c9-aWL"/>
+                            <constraint firstItem="6mx-nL-zj9" firstAttribute="centerY" secondItem="3Cp-Li-04e" secondAttribute="centerY" id="HeK-2x-fPH"/>
+                            <constraint firstItem="f0y-wz-Nve" firstAttribute="leading" secondItem="gnR-QJ-EPc" secondAttribute="trailing" constant="15" id="KO6-7y-8II"/>
+                            <constraint firstItem="NE4-uu-Ufw" firstAttribute="top" secondItem="Eoc-8n-sOi" secondAttribute="bottom" constant="8" id="KXa-mT-Q4p"/>
+                            <constraint firstItem="A32-Jb-TEs" firstAttribute="trailing" secondItem="gnR-QJ-EPc" secondAttribute="trailing" id="NXy-LR-UbN"/>
+                            <constraint firstItem="3Cp-Li-04e" firstAttribute="bottom" secondItem="131-c8-Tse" secondAttribute="bottom" constant="118" id="Ssw-mm-mHl"/>
+                            <constraint firstItem="6mx-nL-zj9" firstAttribute="centerX" secondItem="3Cp-Li-04e" secondAttribute="centerX" id="Yjy-CS-P1H"/>
+                            <constraint firstItem="f0y-wz-Nve" firstAttribute="top" secondItem="3Cp-Li-04e" secondAttribute="top" constant="78" id="bPI-Xk-8Eg"/>
+                            <constraint firstItem="bTd-cQ-7Gt" firstAttribute="trailing" secondItem="f0y-wz-Nve" secondAttribute="trailing" id="bet-4d-rpm"/>
+                            <constraint firstItem="bTd-cQ-7Gt" firstAttribute="top" secondItem="f0y-wz-Nve" secondAttribute="bottom" constant="8" id="fZW-RO-4LF"/>
+                            <constraint firstItem="gnR-QJ-EPc" firstAttribute="centerX" secondItem="3Cp-Li-04e" secondAttribute="centerX" id="iOp-gK-bvT"/>
+                            <constraint firstItem="A32-Jb-TEs" firstAttribute="top" secondItem="gnR-QJ-EPc" secondAttribute="bottom" constant="8" id="jhI-3j-OjB"/>
+                            <constraint firstItem="NE4-uu-Ufw" firstAttribute="leading" secondItem="Eoc-8n-sOi" secondAttribute="leading" id="tCs-Yq-Odt"/>
+                            <constraint firstItem="gnR-QJ-EPc" firstAttribute="leading" secondItem="Eoc-8n-sOi" secondAttribute="trailing" constant="15" id="uPN-1e-wQs"/>
+                            <constraint firstItem="A32-Jb-TEs" firstAttribute="leading" secondItem="gnR-QJ-EPc" secondAttribute="leading" id="uyX-Qm-FYk"/>
+                            <constraint firstItem="NE4-uu-Ufw" firstAttribute="trailing" secondItem="Eoc-8n-sOi" secondAttribute="trailing" id="wzM-Qr-dZ3"/>
+                            <constraint firstItem="gnR-QJ-EPc" firstAttribute="top" secondItem="3Cp-Li-04e" secondAttribute="top" constant="78" id="yD8-AN-4UP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HardBoiledBtn" destination="f0y-wz-Nve" id="xEi-xe-h2b"/>
+                        <outlet property="InAPouchBtn" destination="gnR-QJ-EPc" id="s6I-pp-BAs"/>
+                        <outlet property="SoftBoiledBtn" destination="Eoc-8n-sOi" id="GjC-KE-50N"/>
+                        <outlet property="StartBtn" destination="131-c8-Tse" id="MXA-Qq-Kw0"/>
+                        <outlet property="TimerLabel" destination="6mx-nL-zj9" id="6WJ-qg-8y3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="EggForApp" width="250" height="250"/>
+        <image name="PlayBtn" width="200" height="200"/>
+    </resources>
+</document>
